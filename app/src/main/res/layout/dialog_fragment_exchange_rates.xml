@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_window"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/dialog_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:elevation="6dp"
+        android:minWidth="280dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_currency_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/exchange_dialog_margin_start"
+            android:layout_marginTop="@dimen/exchange_dialog_margin_top"
+            android:layout_marginEnd="@dimen/exchange_dialog_margin_end"
+            android:layout_marginBottom="@dimen/exchange_dialog_margin_bottom"
+            android:gravity="center_vertical"
+            android:text="@string/currency_name_prefix"
+            android:textColor="@color/colorPrimaryText" />
+
+        <TextView
+            android:id="@+id/txt_currency_abbreviation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/exchange_dialog_margin_start"
+            android:layout_marginEnd="@dimen/exchange_dialog_margin_end"
+            android:layout_marginBottom="@dimen/exchange_dialog_margin_bottom"
+            android:gravity="center_vertical"
+            android:text="@string/currency_abbr_prefix"
+            android:textColor="@color/colorPrimaryText" />
+
+        <TextView
+            android:id="@+id/txt_currency_update_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/exchange_dialog_margin_start"
+            android:layout_marginEnd="@dimen/exchange_dialog_margin_end"
+            android:layout_marginBottom="@dimen/exchange_dialog_margin_bottom"
+            android:gravity="center_vertical"
+            android:text="@string/currency_date_prefix"
+            android:textColor="@color/colorPrimaryText" />
+
+        <TextView
+            android:id="@+id/txt_exchange_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/exchange_dialog_margin_start"
+            android:layout_marginEnd="@dimen/exchange_dialog_margin_end"
+            android:layout_marginBottom="@dimen/exchange_dialog_margin_bottom"
+            android:text="@string/currency_rate_prefix"
+            android:textColor="@color/colorPrimaryText" />
+
+        <Spinner
+            android:id="@+id/spin_common_exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/exchange_dialog_margin_start"
+            android:layout_marginEnd="@dimen/exchange_dialog_margin_end"
+            android:layout_marginBottom="@dimen/exchange_dialog_margin_bottom">
+
+        </Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/exchange_dialog_margin"
+                android:layout_weight="1"
+                android:minWidth="64dp"
+                android:text="@string/ok_button_text"
+                android:textColor="@color/colorPrimaryText" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

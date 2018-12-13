@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TestCase</string>
+
+    <string name="cur_abbreviation_usd">USD</string>
+    <string name="cur_abbreviation_eur">EUR</string>
+
+    <string-array name="common_currencies">
+        <item>@string/cur_abbreviation_usd</item>
+        <item>@string/cur_abbreviation_eur</item>
+    </string-array>
+
+    <string name="selected_currency_key_for_bundle">selectedCurrency</string>
+    <string name="exchange_rate_dialog_tag">ExchangeRate</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="activity_toast_msg_location_error">Location couldn\'t retrieved from location client</string>
+    <string name="activity_toast_msg_location_success">Location received from client</string>
+    <string name="activity_toast_msg_location_update">Waiting for the location update to intent Email Client</string>
+    <string name="activity_toast_msg_location_permission_denied">Permission denied to access device location</string>
+
+    <string name="currency_abbr_prefix">Exchange Abbr: 1 </string>
+    <string name="currency_name_prefix">Exchange Name: </string>
+    <string name="currency_date_prefix">Updated On: </string>
+    <string name="currency_rate_prefix">Exchange Rate: </string>
+    <string name="ok_button_text">OK</string>
+
+    <string name="error_currency">An error occurred while retrieving currencies</string>
+    <string name="error_exchange_rate">An error occurred while retrieving exchange rate</string>
+
+
+</resources>
